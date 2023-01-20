@@ -1,0 +1,26 @@
+{
+  "name": "commerce",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build --filter=next-commerce...",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "types": "turbo run types",
+    "prettier-fix": "prettier --write ."
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "husky": "^8.0.1",
+    "postcss": "^8.4.20",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.2.4",
+    "turbo": "^1.4.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "turbo run lint"
+    }
+  },
+  "packageManager": "pnpm@7.5.0"
+}
